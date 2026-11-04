@@ -1,3 +1,5 @@
+"""Benchmark Stable Diffusion 3.5 Medium latency and GPU resource use."""
+
 import sys
 import torch
 import time
