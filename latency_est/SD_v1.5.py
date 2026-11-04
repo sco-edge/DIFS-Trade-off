@@ -34,7 +34,7 @@ H, W         = 512, 512
 # Data Loading
 def load_coco_prompts(json_path, num_samples):
     print("[INFO] Loading COCO prompts...")
-    with open(json_path, 'r') as f:
+    with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     captions = list(set([ann['caption'] for ann in data['annotations']]))
     captions = sorted(captions)
