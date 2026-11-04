@@ -1,3 +1,5 @@
+"""Measure Stable Diffusion 1.5 text–image alignment with CLIP."""
+
 import sys
 import torch
 import json
