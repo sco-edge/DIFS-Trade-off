@@ -1,3 +1,5 @@
+"""Measure Stable Diffusion 1.5 distribution quality with FID."""
+
 import sys
 import torch
 import json
