@@ -1,3 +1,5 @@
+"""Measure Stable Diffusion 1.5 perceptual convergence with LPIPS."""
+
 import sys
 import torch
 import json
