@@ -9,6 +9,7 @@
 | `PaniniServe_scheduler.py` | Scheduler simulation followed by real-GPU execution |
 | `latency_est/` | Latency, throughput, and peak-memory sweeps |
 | `accuracy_est/` | CLIP, FID, and LPIPS quality sweeps |
+| `scripts/` | Lightweight utilities that do not run model inference |
 | `docs/` | Reproduction and interpretation guides |
 
 ## Performance scripts
@@ -34,3 +35,9 @@ latency, throughput, and peak allocated GPU memory.
 File names identify the diffusion model used by an experiment. Not every
 metric currently has a script for every model listed in the project roadmap;
 the repository tree is the authoritative list of implemented experiments.
+
+## Utilities
+
+`scripts/check_environment.py` reports Python, package, CUDA, and visible-GPU
+metadata for attaching to benchmark results. It does not load diffusion model
+weights or start an experiment.
