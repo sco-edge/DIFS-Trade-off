@@ -1,3 +1,5 @@
+"""Measure SDXL text–image alignment across denoising-step settings."""
+
 import sys
 import torch
 import json
