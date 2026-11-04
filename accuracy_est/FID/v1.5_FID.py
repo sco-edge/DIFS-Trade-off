@@ -40,7 +40,7 @@ def seed_everything(seed):
 
 def load_coco_prompts(path, n):
     print("[INFO] Loading COCO prompts...")
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     captions = sorted(list(set([ann['caption'] for ann in data['annotations']])))
     return captions[:n]
