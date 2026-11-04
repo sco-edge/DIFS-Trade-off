@@ -1,3 +1,5 @@
+"""Measure SDXL generated-image distribution quality with FID."""
+
 import sys
 import torch
 import json
