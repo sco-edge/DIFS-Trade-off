@@ -1,0 +1,14 @@
+# Install a CUDA-compatible PyTorch build separately when necessary:
+# https://pytorch.org/get-started/locally/
+torch
+torchvision
+diffusers
+transformers
+accelerate
+safetensors
+numpy
+pandas
+Pillow
+torch-fidelity
+lpips
+nvidia-ml-py
