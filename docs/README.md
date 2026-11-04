@@ -19,6 +19,7 @@ performance, quality, or serving experiment.
 ## Working with results
 
 - [Output files and analysis](outputs.md)
+- [Environment report](environment-report.md)
 - [Reproducible runs](reproducibility.md)
 - [Troubleshooting](troubleshooting.md)
 
