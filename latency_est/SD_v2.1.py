@@ -1,3 +1,5 @@
+"""Benchmark Stable Diffusion 2.1 latency, throughput, and GPU memory."""
+
 import sys
 import torch
 import time
