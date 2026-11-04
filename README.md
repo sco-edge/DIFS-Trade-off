@@ -54,6 +54,7 @@ Hugging Face CLI.
 - [Quality metrics](docs/quality-metrics.md)
 - [PaniniServe scheduler](docs/panini-scheduler.md)
 - [Outputs and analysis](docs/outputs.md)
+- [Environment report](docs/environment-report.md)
 - [Reproducibility](docs/reproducibility.md)
 - [Troubleshooting](docs/troubleshooting.md)
 
