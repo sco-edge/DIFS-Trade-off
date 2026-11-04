@@ -1,3 +1,5 @@
+"""Benchmark SDXL 1.0 latency, throughput, and GPU memory."""
+
 import sys
 import torch
 import time
