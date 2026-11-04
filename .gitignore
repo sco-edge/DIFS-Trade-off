@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Model and dataset caches
+.cache/
+huggingface/
+datasets/
+
+# Generated images and metric artifacts
+outputs/
+**/generated_*/
+**/ref_*/
+**/real_images/
+**/results/
+
+# Benchmark reports written at the repository root
+*_scaling.csv
+PaniniServe_*.csv
