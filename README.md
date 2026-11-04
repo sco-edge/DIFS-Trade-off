@@ -11,8 +11,11 @@ versions of Diffusion Models to optimize production serving.
   - SD v1.5
   - SD v2.1
   - SDXL
-  - SD v3.5  
+  - SD v3.5-Medium
+  - SD v3.5-Large
+  - SD v3.5-Turbo
+  - FLUX.1
 
 * **Evaluation Metrics**:
   - Latency
-  - Accuracy: CLIP, FID
+  - Accuracy: CLIP, FID, LPIPS, ImageReward, PickScore
