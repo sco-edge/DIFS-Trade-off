@@ -37,7 +37,7 @@ def load_coco_prompts(json_path, num_samples):
     if not os.path.exists(json_path):
         print(f"[WARNING] Path not found: {json_path}")
         return ["a photo of a cat"] * num_samples
-    with open(json_path, "r", encoding="utf-8") as f:
+    with open(json_path, "r") as f:
         data = json.load(f)
     captions = sorted(list(set([ann["caption"] for ann in data["annotations"]])))
     return captions[:num_samples]

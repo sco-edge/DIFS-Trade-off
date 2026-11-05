@@ -34,7 +34,7 @@ csv_output_file      = "/home/jslee/diffusion_exper/batch_exper/fid/results/SD_v
 # Data Loading
 def load_coco_prompts(path, n):
     print("[INFO] Loading COCO prompts...")
-    with open(path, 'r', encoding='utf-8') as f:
+    with open(path, 'r') as f:
         data = json.load(f)
     captions = list(set([ann['caption'] for ann in data['annotations']]))
     captions = sorted(captions)
