@@ -1,4 +1,4 @@
-# DIFS: Diffusion Inference Fidelity–Speed Trade-off
+# DIFS
 
 DIFS is an experiment repository for measuring how diffusion-model inference
 settings affect latency, throughput, GPU memory use, and image quality. The
@@ -46,19 +46,7 @@ The scripts download model weights from Hugging Face on first use. Some model
 repositories may require accepting their license and authenticating with the
 Hugging Face CLI.
 
-## Documentation
-
-- [Environment setup](docs/setup.md)
-- [Dataset preparation](docs/dataset.md)
-- [Latency benchmarks](docs/latency-benchmarks.md)
-- [Quality metrics](docs/quality-metrics.md)
-- [PaniniServe scheduler](docs/panini-scheduler.md)
-- [Outputs and analysis](docs/outputs.md)
-- [Environment report](docs/environment-report.md)
-- [Reproducibility](docs/reproducibility.md)
-- [Troubleshooting](docs/troubleshooting.md)
-
-## Important configuration note
+## Configuration note
 
 The experiment scripts currently contain machine-specific absolute paths.
 Review every path and output location before running a long job. A full FID
