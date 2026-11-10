@@ -40,3 +40,19 @@ Do not compare measurements from incompatible hardware or protocols without
 labeling the difference. Include run metadata and note OOM or failed metric
 settings. A chart should state whether higher or lower metric values are
 preferred and identify the model, resolution, and sample count.
+
+## Pull request checklist
+
+Before submitting a pull request:
+
+- Create the branch from the latest `main`.
+- Keep the pull request focused on one topic.
+- Do not include generated images, model weights, caches, or result CSV files.
+- Remove credentials and review machine-specific paths.
+- Run `python -m compileall` when Python files are changed.
+- Run a reduced smoke test when suitable GPU hardware is available.
+- State clearly when runtime tests were not performed.
+- Update documentation when configuration or output columns change.
+- Include a summary and testing section in the pull request description.
+
+Documentation-only pull requests do not require GPU testing.
