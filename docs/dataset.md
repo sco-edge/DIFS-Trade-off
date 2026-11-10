@@ -36,3 +36,25 @@ FID defaults to 10,000 images for each step setting, while CLIP and LPIPS
 typically use 1,000. Generated PNGs and reference directories can therefore
 consume significant disk space. Keep generated artifacts outside version
 control and retain the configuration and CSV summary needed to reproduce them.
+
+## Example directory layout
+
+```text
+coco2014/
+|-- annotations/
+|   `-- captions_val2014.json
+`-- val2014/
+    |-- COCO_val2014_000000000042.jpg
+    `-- ...
+```
+
+## Data required by each metric
+
+| Metric | Required data |
+| --- | --- |
+| CLIP | COCO captions |
+| LPIPS | COCO captions and generated high-step reference images |
+| FID | COCO captions and real COCO validation images |
+| Latency | COCO captions |
+
+Each experiment script must point to the correct local dataset path.
