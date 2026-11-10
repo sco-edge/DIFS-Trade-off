@@ -40,6 +40,22 @@ greater similarity to the reference generation.
 python accuracy_est/LPIPS/v1.5_LPIPS.py
 ```
 
+### Available LPIPS benchmarks
+
+| Model | Resolution | Script |
+| --- | --- | --- |
+| Stable Diffusion 1.5 | 512x512 | `accuracy_est/LPIPS/v1.5_LPIPS.py` |
+| Stable Diffusion 2.1 | 768x768 | `accuracy_est/LPIPS/v2.1_LPIPS.py` |
+| SDXL | 1024x1024 | `accuracy_est/LPIPS/SDXL_LPIPS.py` |
+| Stable Diffusion 3.5 Medium | 1024x1024 | `accuracy_est/LPIPS/v3.5_LPIPS.py` |
+| Stable Diffusion 3.5 Large | 1024x1024 | `accuracy_est/LPIPS/v3.5-Large_LPIPS.py` |
+| Stable Diffusion 3.5 Large Turbo | 1024x1024 | `accuracy_est/LPIPS/v3.5-Turbo_LPIPS.py` |
+| FLUX.1-dev | 1024x1024 | `accuracy_est/LPIPS/FLUX.1_LPIPS.py` |
+
+Run benchmark scripts from the repository root. Update the COCO annotation,
+output, and model paths before running an experiment. Reference image
+generation may require substantial GPU time and disk space.
+
 ## Interpreting a step sweep
 
 Increasing denoising steps usually increases latency, but quality metrics may
