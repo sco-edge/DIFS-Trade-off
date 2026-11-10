@@ -49,3 +49,15 @@ Keep the GPU model, precision, resolution, scheduler, library versions, warm-up
 procedure, and prompt count constant. Report batch latency and throughput
 together: a configuration can improve throughput while increasing the delay
 seen by one request.
+
+## Available model benchmarks
+
+| Model | Script | Resolution | Precision | Output CSV |
+| --- | --- | --- | --- | --- |
+| Stable Diffusion 1.5 | `latency_est/SD_v1.5.py` | 512x512 | float16 | `SD_v1.5_scaling.csv` |
+| Stable Diffusion 2.1 | `latency_est/SD_v2.1.py` | 768x768 | float16 | `SD_v2.1_scaling.csv` |
+| SDXL 1.0 | `latency_est/SDXL.py` | 1024x1024 | float32 | `SDXL_scaling.csv` |
+| Stable Diffusion 3.5 Medium | `latency_est/SD_v3.5.py` | 1024x1024 | bfloat16 | `SD3.5_scaling.csv` |
+
+Precision and resolution affect latency, memory usage, and throughput.
+Modified configurations should be reported with benchmark results.
